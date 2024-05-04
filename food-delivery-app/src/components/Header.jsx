@@ -7,6 +7,7 @@ import { CiDiscount1 } from "react-icons/ci";
 import { LuBadgeHelp } from "react-icons/lu";
 import { CiShoppingCart } from "react-icons/ci";
 import { VscAccount } from "react-icons/vsc";
+import { FaBox } from "react-icons/fa6";
 
 function Header() {
   const [toggle, settoggle] = useState(false);
@@ -20,6 +21,10 @@ function Header() {
   };
 
   const links = [
+    {
+      icon:<FaBox/>,
+      name:"Swiggy Corporate"
+    },
     {
       icon: <IoIosSearch />,
       name: "Search",
@@ -74,10 +79,10 @@ function Header() {
             />
           </div>
           <div>
-            <span className="font-bold border-b-[3px] border-[black]">
-              Ratanda
+            <span className="font-bold border-b-[3px] border-[black] hover:text-[#fc8019] hover:border-[#fc8019] cursor-pointer">
+              Other
             </span>{" "}
-            Jodhpur, Rajasthan, India
+            
             <RxCaretDown
               fontSize={25}
               className="inline text-[#fc8019] cursor-pointer"
