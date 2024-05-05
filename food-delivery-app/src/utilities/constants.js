@@ -1438,4 +1438,61 @@ export const data = [
       type: "WEBLINK",
     },
   },
+  {
+    info: {
+      id: "639518",
+      name: "Dum Safar Biryani",
+      cloudinaryImageId: "1154cffac2453eb0bf7fdda7e5ea1659",
+      locality: "Rajdanga Main Road",
+      areaName: "ACROPOLIS MALL",
+      costForTwo: "₹500 for two",
+      cuisines: ["Biryani", "Kebabs", "Tandoor", "Indian", "Desserts"],
+      avgRating: 4,
+      parentId: "351013",
+      avgRatingString: "4.0",
+      totalRatingsString: "100+",
+      sla: {
+        deliveryTime: 33,
+        lastMileTravel: 1.7,
+        serviceability: "SERVICEABLE",
+        slaString: "30-35 mins",
+        lastMileTravelString: "1.7 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-05-06 00:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "50% OFF",
+        subHeader: "UPTO ₹100",
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/dum-safar-biryani-rajdanga-main-road-acropolis-mall-kolkata-639518",
+      type: "WEBLINK",
+    },
+  },
 ];

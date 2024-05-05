@@ -9,13 +9,14 @@ function TopRest() {
 
   const nextSlide = ()=>{
     console.log("next")
-    if(data.length-2==slide) return false;
-    setslide(slide+2);
+    if(data.length-3==slide) return false;
+    setslide(slide+3);
   }
+
 
   const prevSlide = ()=>{
     if(slide==0) return false;
-    setslide(slide-2);
+    setslide(slide-3);
   }
 
 
@@ -56,8 +57,8 @@ function TopRest() {
 
       <div className="flex gap-5 overflow-hidden">
       {
-            data.map((res)=>{
-                return <Card key={res.info.id} styleProperty={{transform:`translate(-${slide*100}%)`}} resName={res}/>
+            data.map((res,index)=>{
+                return index!=20 && <Card key={res.info.id} styleProperty={{transform:`translate(-${slide*100}%)`}} resName={res}/>
             })
         }
       </div>

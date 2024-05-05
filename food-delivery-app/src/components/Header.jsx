@@ -8,6 +8,8 @@ import { LuBadgeHelp } from "react-icons/lu";
 import { CiShoppingCart } from "react-icons/ci";
 import { VscAccount } from "react-icons/vsc";
 import { FaBox } from "react-icons/fa6";
+import { CiGps } from "react-icons/ci";
+import { RxCross1 } from "react-icons/rx";
 
 function Header() {
   const [toggle, settoggle] = useState(false);
@@ -64,17 +66,27 @@ function Header() {
           onClick={(e) => {
             e.stopPropagation();
           }}
-          className="w-[400px] bg-white h-full absolute duration-[400ms]"
+          className="w-[400px] bg-white h-full absolute duration-[400ms] flex flex-col justify-start items-center pt-16"
           style={{
             left: toggle ? "0%" : "-100%",
           }}
-        ></div>
+        > 
+        <div className="absolute top-5 left-9 cursor-pointer" onClick={hideSideMenu}><RxCross1 className="w-[20px] h-[20px]"/></div>
+        <div><input type="text" className="border h-[56px] w-[332px] pl-3 font-semibold outline-none"  placeholder="Search for area, street name"/></div>
+        <div className="border w-[332px] h-[80px] mt-4 flex flex-col justify-center items-start pl-3">
+          <div className="flex items-center gap-2 text-medium">
+          <CiGps className="w-[20px] h-[20px]"/>
+          <p>Get Current location</p>
+          </div>
+          <span className="text-gray-500 pl-6">using GPS</span>
+        </div>
+        </div>
       </div>
       <header className="p-[15px] shadow-xl text-[#686b78] sticky top-0 bg-white z-[999]">
         <div className="max-w-[1200px]  mx-auto  flex items-center">
-          <div className="w-[60px]">
+          <div className="w-[60px] mr-2">
             <svg
-              className="_8pSp- "
+              className="_8pSp-  cursor-pointer duration-100"
               viewBox="0 0 559 825"
               height={49}
               width={34}
@@ -103,7 +115,7 @@ function Header() {
           </div>
           <div>
             <span
-              onClick={showSideMenu}
+              
               className="font-bold border-b-[3px] border-[black] hover:text-[#fc8019] hover:border-[#fc8019] cursor-pointer"
             >
               Other
